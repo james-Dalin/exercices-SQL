@@ -1,8 +1,52 @@
+-- Active: 1754051608856@@127.0.0.1@3306@transport_aerien
 DROP DATABASE transport_aerien;
 CREATE DATABASE IF NOT EXISTS transport_aerien;
 USE transport_aerien;
 
+-- SELECT auteur_id, COUNT(*) AS nb_livres
+-- FROM livres
+-- GROUP BY auteur_id
+-- HAVING COUNT(*) > 1;
 
+-- Petit 1
+SELECT * 
+FROM avions;
+-- Petit 2
+SELECT modele, constructeur 
+FROM avions;
+-- Petit 3
+SELECT * 
+FROM avions 
+WHERE capacite > 300;
+-- Petit 4
+SELECT *
+FROM avions
+WHERE autonomie_km < 7000;
+-- Petit 5
+SELECT *
+FROM avions
+WHERE en_service = FALSE;
+-- Petit 6
+SELECT *
+FROM avions
+WHERE constructeur = 'Boeing';
+-- Petit 7
+
+-- Petit 8
+
+-- Petit 9
+SELECT *
+FROM avions
+ORDER BY autonomie_km ASC ;
+-- Petti 10
+SELECT *
+FROM avions
+ORDER BY capacite DESC;
+-- Petit 11
+
+-- Petit 12
+
+-- Petit 13
 
  -- Table des Avions
 CREATE TABLE IF NOT EXISTS avions (
@@ -27,7 +71,3 @@ VALUES
 ('E190', 'Embraer', 114, 4260, TRUE),
 ('CRJ900', 'Bombardier', 90, 2956, TRUE),
 ('Il-96', 'Ilyushin', 262, 11000, FALSE);
-
-SELECT * FROM avions;
-SELECT modele, constructeur FROM avions;
-SELECT 
