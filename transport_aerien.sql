@@ -1,4 +1,4 @@
--- Active: 1754051608856@@127.0.0.1@3306@transport_aerien
+-- Active: 1753538096979@@127.0.0.1@3306@transport_aerien
 DROP DATABASE transport_aerien;
 CREATE DATABASE IF NOT EXISTS transport_aerien;
 USE transport_aerien;
@@ -8,6 +8,7 @@ USE transport_aerien;
 -- GROUP BY auteur_id
 -- HAVING COUNT(*) > 1;
 
+/*Exercice2 */
 -- Petit 1
 SELECT * 
 FROM avions;
@@ -47,6 +48,7 @@ ORDER BY capacite DESC;
 -- Petit 12
 
 -- Petit 13
+/*Exercice 2*/
 
  -- Table des Avions
 CREATE TABLE IF NOT EXISTS avions (
