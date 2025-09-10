@@ -38,7 +38,7 @@ WHERE capacite BETWEEN 100 AND 300;
 -- Petit 8 (Sans aide) Afficher tous les constructeurs des avions sans doublons
 SELECT DISTINCT constructeur
 FROM avions;
--- Petit 9 (Sans aide) Montrer l'autonomie des avions ans l'ordre coirssant
+-- Petit 9 (Sans aide) Montrer l'autonomie des avions ans l'ordre croissant
 SELECT *
 FROM avions
 ORDER BY autonomie_km ASC ;
