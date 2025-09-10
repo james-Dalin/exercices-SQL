@@ -3,8 +3,6 @@ DROP DATABASE librairie;
 CREATE DATABASE IF NOT EXISTS librairie;
 USE librairie;
 
-SET sql_mode= '';
-
 DROP TABLES IF EXISTS livres;
 DROP TABLES IF EXISTS auteurs;
 DROP TABLES IF EXISTS categories;
